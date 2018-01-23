@@ -2,7 +2,7 @@
   <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/1fbb7da7f53bd0dcb75962160055f291-full.png"/></a>
 </p>
 
-## Mr. Z Establishment Management System
+# Mr. Z Establishment Management System
 ```$xslt
 This is a Software that explains how Mr.Z can manage is one establishment "AZ" with two 
 outlets "AB" and "AC" with the ability to get total list or partial list of transactions
@@ -13,28 +13,28 @@ I can be sure to push these up at latter time.
 
 ```
 
-# Home page
+## Home page
 <p align="center">
-  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/9913150f2d6fa2732f6f543acc76ef51-full.png"/></a>
+  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/9ecec553886e35fec2ef1019c9888427-full.png"/></a>
 </p>
 
-# OutLets' Page
+## OutLets' Page
 <p align="center">
   <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/ae10cbfd4fb0b2bcc09abfc7bb0e760c-full.png"/></a>
 </p>
 
-# Below is where to input show transaction logic
+## Below is where to input show transaction logic
 <p align="center">
   <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/eb936b6572a6500b9df48cc5c371e9e9-full.png"/></a>
 </p>
 
-# Below is a mock customer page for payment.
+## Below is a mock customer page for payment.
 <p align="center">
   <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/f4d2b628ad6e14934f73d0c21133ec7c-full.png"/></a>
 </p>
 
 
-# Spring boot Setup
+## Spring boot Setup
 ```$xslt
 A starter project can be downloaded with all dependencies from
 ```
@@ -49,7 +49,7 @@ The environment for this application is setup in the file below
 
 ```
 
-# How to Run
+## How to Run
 ```$xslt
 Application runs in main method
 ```
@@ -91,7 +91,7 @@ spring.datasource.password=Mrz
 spring.main.allow-bean-definition-overriding=true
 
 ```
-# Important APIs
+## Important APIs
 
 1. The main dashboard: http://localhost:8080/dashboard/az-Enterprise
 
@@ -101,7 +101,7 @@ spring.main.allow-bean-definition-overriding=true
 
 4. To show List of outlets for AZ establishment for Mr.Z: http://localhost:8080/dashboard/enterprise/listOfOutLets?enterpriseId=1
 
-# Thank you for reading.
+## Thank you for reading.
 
 
 
