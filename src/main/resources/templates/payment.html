@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Reference Bootstrap files -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        label{
+            color: darkslategray;
+        }
+        table tbody tr td{
+            padding: 12px;
+            margin-bottom: 10%;
+
+        }
+    </style>
+</head>
+
+<body style="background-color: azure; align-content: center; ">
+<span style="top: 5%; width: 20%;left: 43%; position: fixed; font-size: 20px;
+    color: darkslategray">Please make payment here </span>
+<div style="position: fixed; top: 5%; width: 100%; left: 20% ">
+    <div id="loginbox" style="margin-top: 50px; "
+         class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+
+        <div class="Container" style=" padding: 5px; ">
+            <div>
+                <form action="#" th:action="@{/payment/mocktransaction}" method="POST"  >
+
+                    <div style="border: 1px solid aqua; background-color: white; width: 128%">
+                        <table >
+
+                            <tr class="form-group">
+                                <td><label for="sourceA">Source:</label></td>
+                                <td> <select  name="source" class="form-control" id="sourceA">
+                                    <option  th:type="${srcList.getSourceName()}"
+                                             th:each="srcList: ${sourceList}"
+                                             th:value="${srcList.getSourceName()}"
+                                             th:text="${srcList.getSourceName()}"></option>
+                                </select>
+                                </td>
+                            </tr>
+                            <tr class="form-group">
+                                <td><label for="payer">Payer:</label></td>
+                                <td><input type="text" name="payer" class="form-control" id="payer"
+                                           placeholder=" Enter payer's name"></td>
+
+                            </tr>
+                            <tr class="form-group">
+                                <td><label for="amount">Amount:</label></td>
+                                <td><input type="number" name="amount" class="form-control" id="amount"
+                                           placeholder="Enter amount here!"></td>
+
+                            </tr>
+
+                            <tr class="form-group">
+                                <td><input type="submit" value="Pay" class="btn btn-primary"/></td>
+                            </tr>
+                            <div style="clear:both"></div>
+                        </table>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<span style="bottom: 10%; width: 20%;left: 42%; position: fixed; font-size: 14px;
+    color: darkslategray"><div style="text-align: center">
+        <a class="alink">Privacy</a>
+        <a class="alink">Terms & Conditions</a>
+        <p style="margin-top: 2%" class="alink"><sup><img th:src="@{/images/gene-app.png}"
+                                                          src="../static/images/gene-app.png"
+                                                          width="24px"
+                                                          height="23px"></sup>Copyright<sup>&copy;</sup> 2020. All rights Research</p>
+    </div></span>
+</body>
+</html>

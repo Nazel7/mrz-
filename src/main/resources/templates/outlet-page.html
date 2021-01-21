@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>MEMS</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <style>
+        .ttableth{
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="Container" style="margin: 2% 10%">
+
+<div>
+    <div class="bg-primary" style="text-align: center; padding: 5px">
+        <h2>Mr.Z- ESTABLISHMENT MANAGEMENT SYSTEM</h2>
+        <h4>List of Outlets</h4>
+    </div>
+    <hr>
+
+
+
+        <a class="btn btn-success mb-3" th:href="@{/enterprise/show-all-transaction}" style="float: left">Show All Transaction</a>
+
+
+</div>
+
+<div>
+    <table border="1" class="table table-striped table-bordered " style="align-content: center; text-align: center">
+        <thead class="thead table-primary">
+        <tr>
+            <th class="ttableth">Id</th>
+            <th class="ttableth">Name</th>
+            <th>AcountNo_</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody class=" table table-hover">
+
+        <tr th:each="ot : ${outlets}" >
+            <td th:text="${ot.id}" class="ttableth"/>
+            <td th:text="${ot.name}" class="ttableth"/>
+            <td th:text="${ot.accountNo}" class="ttableth"/>
+            <td th:text="${ot.address}" class="ttableth"/>
+            <td>
+
+                <a class="btn btn-success btn-sm"
+                   th:href="@{/outlet(outletId=${ot.getId()})}">List of Transactions</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div style="clear: both"></div>
+<div>
+    <a th:href="@{/dashboard/az-Enterprise}" class="btn btn-outline-primary" style="float: left">
+        Dashboard
+    </a>
+
+
+
+</div>
+</body>
+</html>

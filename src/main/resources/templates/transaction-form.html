@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Transaction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Reference Bootstrap files -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        label{
+            color: darkslategray;
+        }
+        table tbody tr td{
+            padding: 12px;
+            margin-bottom: 10%;
+
+        }
+    </style>
+</head>
+
+<body style="background-color: azure; align-content: center; ">
+<span style="top: 5%; width: 20%;left: 43%; position: fixed; font-size: 20px;
+    color: darkslategray">Please make payment here </span>
+<div style="position: fixed; top: 5%; width: 100%; left: 20% ">
+    <div id="loginbox" style="margin-top: 50px; "
+         class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+
+        <div class="Container" style=" padding: 5px; ">
+            <div>
+                <form action="#" th:action="@{/transaction/dateoutput}" method="POST"  >
+
+                    <div style="border: 1px solid aqua; background-color: white; width: 128%">
+                        <table >
+
+                            <tr class="form-group">
+                                <td><label for="date1">Date1:</label></td>
+                                <td> <select  name="date1" class="form-control" id="date1">
+                                    <option  th:type="${date}"
+                                             th:each="date: ${dates}"
+                                             th:value="${date}"
+                                             th:text="${date}"></option>
+                                </select>
+                                </td>
+                            </tr>
+                            <tr class="form-group">
+                                <td><label for="sourceA">Date2:</label></td>
+                                <td> <select  name="date2" class="form-control" id="sourceA">
+                                    <option  th:type="${date1}"
+                                             th:each="date1: ${dates}"
+                                             th:value="${date1}"
+                                             th:text="${date1}"></option>
+                                </select>
+                                </td>
+                            </tr>
+
+
+                            <tr class="form-group">
+                                <td><input type="submit" value="Submit" class="btn btn-primary"/></td>
+                            </tr>
+                            <div style="clear:both"></div>
+                        </table>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<span style="bottom: 10%; width: 20%;left: 42%; position: fixed; font-size: 14px;
+    color: darkslategray"><div style="text-align: center">
+        <a class="alink">Privacy</a>
+        <a class="alink">Terms & Conditions</a>
+        <p style="margin-top: 2%" class="alink"><sup><img th:src="@{/images/gene-app.png}"
+                                                          src="../static/images/gene-app.png"
+                                                          width="24px"
+                                                          height="23px"></sup>Copyright<sup>&copy;</sup> 2020. All rights Research</p>
+    </div></span>
+</body>
+</html>

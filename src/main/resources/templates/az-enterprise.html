@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>MEMS</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <style>
+        .ttableth{
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="Container" style="margin: 2% 10%">
+
+<div>
+    <div class="bg-primary" style="text-align: center; padding: 5px">
+        <h2>Mr.Z- ESTABLISHMENT MANAGEMENT SYSTEM</h2>
+    </div>
+    <hr>
+
+
+
+        <a class="btn btn-success mb-3" th:href="@{/enterprise/show-all-transaction}" style="float: left">Show All Transaction</a>
+
+
+
+
+</div>
+
+<div>
+    <table border="1" class="table table-striped table-bordered " style="align-content: center; text-align: center">
+        <thead class="thead table-primary">
+        <tr>
+            <th class="ttableth">Enterprise-Name</th>
+            <th class="ttableth">Address</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody class=" table table-hover">
+
+        <tr th:each="az : ${azEList}" >
+            <td th:text="${az.enterprizeName}" class="ttableth"/>
+            <td th:text="${az.address}" class="ttableth"/>
+            <td><a class="btn btn-outline-success btn-sm"
+                   th:href="@{/dashboard/enterprise/updateCredential(updateLink=${az.getId()})}"
+                   onclick="if(!(confirm('Are you sure, you want to update credential?')))
+                           return false">Update</a>
+
+                <a class="btn btn-primary btn-sm"
+                   th:href="@{/dashboard/enterprise/listOfOutLets(enterpriseId=${az.getId()})}">List of OutLets</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div style="clear: both"></div>
+</body>
+</html>
