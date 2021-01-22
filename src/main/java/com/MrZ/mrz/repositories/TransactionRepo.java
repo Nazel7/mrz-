@@ -14,6 +14,8 @@ public interface TransactionRepo extends JpaRepository<Transaction, Integer> {
    @Query("select t from Transaction t where (t.date between  ?1 and ?2)")
    List<Transaction> getTransactionByDates(Date date1, Date date2);
 
+   @Query("select t from Transaction t where t.date=?1")
+   List<Transaction> getTransactionByIndexZero(Date date2);
 
    @Query("select d.date from Transaction d order by d.date")
     List<Date> getDateList();

@@ -45,6 +45,11 @@ public class TransactionController {
 
 
         List<Transaction> transactions = service.getTransactionByDates(d, dd);
+        if(transactions.size() == 0){
+            List<Transaction> transactions1= service.getTransactionByIndexZero(dd);
+            model.addAttribute("transactionByDate", transactions1);
+            return "transaction-by-date-time";
+        }
         System.out.println(transactions.get(0).getBalance());
         model.addAttribute("transactionByDate", transactions);
 

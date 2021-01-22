@@ -36,6 +36,13 @@ public class TransactionService implements ITransactionService {
     }
 
     @Override
+    public List<Transaction> getTransactionByIndexZero(Date date2) {
+
+
+        return  transactionRepo.getTransactionByIndexZero(date2);
+    }
+
+    @Override
     public List<Date> getDateList() {
 
         return transactionRepo.getDateList();
