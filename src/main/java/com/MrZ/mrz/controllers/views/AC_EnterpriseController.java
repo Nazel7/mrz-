@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -23,7 +24,8 @@ public class AC_EnterpriseController {
         List<AZ_enterprise> az_enterprises= iAzEnterpriseService.findAllEnterprise();
         if (az_enterprises != null){
             model.addAttribute("azEList", az_enterprises);
-
+            String d= "2021/06/01";
+            System.out.println(new Date(d));
             return "az-enterprise";
         }
          return  null;

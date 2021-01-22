@@ -41,23 +41,13 @@
                         <table >
 
                             <tr class="form-group">
-                                <td><label for="date1">Date1:</label></td>
-                                <td> <select  name="date1" class="form-control" id="date1">
-                                    <option  th:type="${date}"
-                                             th:each="date: ${dates}"
-                                             th:value="${date}"
-                                             th:text="${date}"></option>
-                                </select>
+                                <td><label>Date1:</label></td>
+                                <td> <input type="date" name="date1" class="form-control"/>
                                 </td>
                             </tr>
-                            <tr class="form-group">
-                                <td><label for="sourceA">Date2:</label></td>
-                                <td> <select  name="date2" class="form-control" id="sourceA">
-                                    <option  th:type="${date1}"
-                                             th:each="date1: ${dates}"
-                                             th:value="${date1}"
-                                             th:text="${date1}"></option>
-                                </select>
+                            <tr>
+                                <td><label>Date2:</label></td>
+                                <td> <input type="date" name="date2" class="form-control"/>
                                 </td>
                             </tr>
 

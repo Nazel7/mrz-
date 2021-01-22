@@ -1,10 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Transaction to deplay here</title>
+    <title>MEMS</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <style>
+        .ttableth{
+            text-align: left;
+        }
+    </style>
 </head>
-<body>
-<h1> Transaction list by days/week should display here.</h1>
+<body class="Container" style="margin: 2% 10%">
+
+<div>
+    <div class="bg-primary" style="text-align: center; padding: 5px">
+        <h2>Mr.Z- ESTABLISHMENT MANAGEMENT SYSTEM</h2>
+        <h4>List of All Transactions</h4>
+    </div>
+    <hr>
+
+
+
+    <a class="btn btn-success mb-3" th:href="@{/enterprise/show-all-transaction}" style="float: left">Show All Transaction</a>
+
+
+</div>
+
+<div>
+    <table border="1" class="table table-striped table-bordered ">
+        <thead class="thead table-primary">
+        <tr>
+            <th>Id</th>
+            <th>Balance</th>
+            <th>Payment</th>
+            <th>Payer</th>
+            <th>Date_Transact</th>
+            <th>SourceAccount</th>
+        </tr>
+        </thead>
+        <tbody class=" table table-hover">
+
+        <tr th:each="trD : ${transactionByDate}" >
+            <td th:text="${trD.id}" class="ttableth"/>
+            <td th:text="${trD.balance}" class="ttableth"/>
+            <td th:text="${trD.payment}" class="ttableth"/>
+            <td th:text="${trD.payer}" class="ttableth"/>
+            <td th:text="${trD.date}" class="ttableth"/>
+            <td th:text="${trD.sourceAccount}" class="ttableth"/>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div style="clear: both"></div>
+<div>
+    <a th:href="@{/dashboard/az-Enterprise}" class="btn btn-outline-primary" style="float: left">
+        Dashboard
+    </a>
+
+
+
+</div>
 </body>
 </html>
