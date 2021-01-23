@@ -14,24 +14,23 @@ I can be sure to push these up at latter time.
 ```
 
 # Home page
-
-<p>
-https://cdn1.bbcode0.com/uploads/2021/1/23/9913150f2d6fa2732f6f543acc76ef51-full.png
+<p align="center">
+  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/9913150f2d6fa2732f6f543acc76ef51-full.png"/></a>
 </p>
 
 # OutLets' Page
-<p>
-https://cdn1.bbcode0.com/uploads/2021/1/23/ae10cbfd4fb0b2bcc09abfc7bb0e760c-full.png
+<p align="center">
+  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/ae10cbfd4fb0b2bcc09abfc7bb0e760c-full.png"/></a>
 </p>
 
 # Below is where to input show transaction logic
-<p>
-https://cdn1.bbcode0.com/uploads/2021/1/23/eb936b6572a6500b9df48cc5c371e9e9-full.png
+<p align="center">
+  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/eb936b6572a6500b9df48cc5c371e9e9-full.png"/></a>
 </p>
 
 # Below is a mock customer page for payment.
-<p>
-https://cdn1.bbcode0.com/uploads/2021/1/23/f4d2b628ad6e14934f73d0c21133ec7c-full.png
+<p align="center">
+  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/f4d2b628ad6e14934f73d0c21133ec7c-full.png"/></a>
 </p>
 
 
