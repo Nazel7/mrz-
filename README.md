@@ -54,7 +54,7 @@ The environment for this application is setup in the file below
 Application runs in main method
 ```
 
-```$xslt
+<code>
 package com.MrZ.mrz;
 
 import org.springframework.boot.SpringApplication;
@@ -62,13 +62,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MrzApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(MrzApplication.class, args);
 	}
 
 }
-```
+</code>
 
 
 ```$xslt
@@ -78,11 +77,20 @@ In other to run successfully, you do need to setup the Mysql Scheme.
     
  2. Input:  spring.jpa.hibernate.ddl-auto= update
  
-Above will automatically generate the table in MySQL workbench with predefined Database schema setup in the 
+Above will automatically generate the table in MySQL workbench with predefined Database schema  setup in the 
+
 /application.properties
 
 ```
 
+```$xslt
+
+spring.datasource.url=jdbc:mysql://localhost:3306/mrz_datasource?useSSL=false&serverTimezone=UTC
+spring.datasource.username=Mrz
+spring.datasource.password=Mrz
+spring.main.allow-bean-definition-overriding=true
+
+```
 # Important APIs
 
 1. The main dashboard: http://localhost:8080/dashboard/az-Enterprise
