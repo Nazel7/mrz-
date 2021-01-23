@@ -27,7 +27,7 @@ public class SourceAccountListController {
     @Autowired
     private ITransactionService transactionService;
 
-    @GetMapping("/sourceac-list")
+    @GetMapping("/payment/form")
     public String getSourceAccountList(Model model){
         List<SourceAccountList> sourceAccountLists= iSourceAccountListService.findAllSourceAList();
 

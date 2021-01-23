@@ -95,7 +95,7 @@ spring.main.allow-bean-definition-overriding=true
 
 1. The main dashboard: http://localhost:8080/dashboard/az-Enterprise
 
-2. For mock payment:  http://localhost:8080//sourceac-list
+2. For mock payment:  http://localhost:8080/payment/form
 
 3. To show transactions: http://localhost:8080/enterprise/show-all-transaction
 
