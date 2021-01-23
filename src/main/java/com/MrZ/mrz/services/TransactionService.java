@@ -47,4 +47,10 @@ public class TransactionService implements ITransactionService {
 
         return transactionRepo.getDateList();
     }
+
+    @Override
+    public List<Transaction> showAllTransaction() {
+
+        return transactionRepo.findAll();
+    }
 }

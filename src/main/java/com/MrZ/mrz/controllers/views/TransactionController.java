@@ -3,12 +3,17 @@ package com.MrZ.mrz.controllers.views;
 import com.MrZ.mrz.entities.Transaction;
 import com.MrZ.mrz.interfaces.ITransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.validation.Valid;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -20,6 +25,7 @@ public class TransactionController {
     @Autowired
     ITransactionService service;
 
+
     @GetMapping("/enterprise/show-all-transaction")
     public String getAllTransactionDetails(Model model) {
         List<Date> dates = service.getDateList();
@@ -30,11 +36,10 @@ public class TransactionController {
     }
 
     @PostMapping("/transaction/dateoutput")
-    public String postTransaction(@RequestParam("date1") String date,
+    public String postTransaction(@Valid @RequestParam("date1") String date,
                                   @RequestParam("date2") String date22,
                                   Model model) throws Exception{
 
-//        String d= "2021/06/01";
 
         String dateClone= date.substring(0, 10);
         String dateClone1= date22.substring(0, 10);
@@ -61,6 +66,15 @@ public class TransactionController {
 
         return "transaction-by-date-time";
 
+    }
+
+    @GetMapping("/show-all-transactions")
+    public String showAlltransactions(Model model){
+        List<Transaction> transactions= service.showAllTransaction();
+
+        model.addAttribute("transactionByDate", transactions);
+
+        return "transaction-by-date-time";
     }
 
 }

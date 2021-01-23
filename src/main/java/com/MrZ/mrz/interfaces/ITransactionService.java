@@ -17,4 +17,6 @@ public interface ITransactionService {
     List<Transaction> getTransactionByIndexZero(Date date2);
 
     List<Date> getDateList();
+
+    List<Transaction> showAllTransaction();
 }
