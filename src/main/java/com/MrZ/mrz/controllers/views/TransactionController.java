@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -46,7 +47,12 @@ public class TransactionController {
 
         List<Transaction> transactions = service.getTransactionByDates(d, dd);
         if(transactions.size() == 0){
-            List<Transaction> transactions1= service.getTransactionByIndexZero(dd);
+            Calendar c= Calendar.getInstance();
+            c.setTime(dd);
+            c.add(Calendar.DAY_OF_MONTH, 1);
+            Date newDD= c.getTime();
+
+            List<Transaction> transactions1= service.getTransactionByDates(d, newDD);
             model.addAttribute("transactionByDate", transactions1);
             return "transaction-by-date-time";
         }
