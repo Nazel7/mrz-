@@ -16,22 +16,22 @@ I can be sure to push these up at latter time.
 # Home page
 
 <p>
-![](mrz/src/main/resources/static/images/home-page.png)
+https://cdn1.bbcode0.com/uploads/2021/1/23/9913150f2d6fa2732f6f543acc76ef51-full.png
 </p>
 
 # OutLets' Page
 <p>
-![](mrz/src/main/resources/static/images/outlets-icon.png)
+https://cdn1.bbcode0.com/uploads/2021/1/23/ae10cbfd4fb0b2bcc09abfc7bb0e760c-full.png
 </p>
 
 # Below is where to input show transaction logic
 <p>
-![](mrz/src/main/resources/static/images/transaction-logo.png)
+https://cdn1.bbcode0.com/uploads/2021/1/23/eb936b6572a6500b9df48cc5c371e9e9-full.png
 </p>
 
 # Below is a mock customer page for payment.
 <p>
-![](mrz/src/main/resources/static/images/custom-pay.png)
+https://cdn1.bbcode0.com/uploads/2021/1/23/f4d2b628ad6e14934f73d0c21133ec7c-full.png
 </p>
 
 
