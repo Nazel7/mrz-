@@ -15,7 +15,11 @@ I can be sure to push these up at latter time.
 
 ## Home page
 <p align="center">
+<<<<<<< HEAD
   <img src="/src/main/resources/static/images/home-page.png"/>
+=======
+  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/9ecec553886e35fec2ef1019c9888427-full.png"/></a>
+>>>>>>> 155074607644c2a37025b082f400bfbe9e89aa2c
 </p>
 
 ## OutLets' Page
@@ -54,7 +58,7 @@ The environment for this application is setup in the file below
 Application runs in main method
 ```
 
-```$xslt
+<code>
 package com.MrZ.mrz;
 
 import org.springframework.boot.SpringApplication;
@@ -67,7 +71,7 @@ public class MrzApplication {
 	}
 
 }
-```
+</code>
 
 
 ```$xslt

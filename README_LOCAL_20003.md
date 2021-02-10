@@ -54,7 +54,7 @@ The environment for this application is setup in the file below
 Application runs in main method
 ```
 
-```$xslt
+<code>
 package com.MrZ.mrz;
 
 import org.springframework.boot.SpringApplication;
@@ -67,7 +67,7 @@ public class MrzApplication {
 	}
 
 }
-```
+</code>
 
 
 ```$xslt
