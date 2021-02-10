@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/1fbb7da7f53bd0dcb75962160055f291-full.png"/></a>
+  <img src="src/main/resources/static/images/MZ-logo.jpg"/>
 </p>
 
 # Mr. Z Establishment Management System
