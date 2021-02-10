@@ -15,22 +15,22 @@ I can be sure to push these up at latter time.
 
 ## Home page
 <p align="center">
-  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/9ecec553886e35fec2ef1019c9888427-full.png"/></a>
+  <img src="/src/main/resources/static/images/home-page.png"/>
 </p>
 
 ## OutLets' Page
 <p align="center">
-  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/ae10cbfd4fb0b2bcc09abfc7bb0e760c-full.png"/></a>
+  <img src="/src/main/resources/static/images/outlets-icon.png"/>
 </p>
 
 ## Below is where to input show transaction logic
 <p align="center">
-  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/eb936b6572a6500b9df48cc5c371e9e9-full.png"/></a>
+  <img src="/src/main/resources/static/images/transaction-logo.png"/>
 </p>
 
 ## Below is a mock customer page for payment.
 <p align="center">
-  <a href="https://cdn1.bbcode0.com/" target="blank"><img src="https://cdn1.bbcode0.com/uploads/2021/1/23/f4d2b628ad6e14934f73d0c21133ec7c-full.png"/></a>
+  <img src="src/main/resources/static/images/custom-pay.png"/>
 </p>
 
 
